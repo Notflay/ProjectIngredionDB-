@@ -111,61 +111,7 @@ namespace ProjectIngredionDB
             txtNombre.Text = DgvAlmacen.Rows[DgvAlmacen.CurrentCell.RowIndex].Cells[1].Value.ToString();
             txtStock.Text = DgvAlmacen.Rows[DgvAlmacen.CurrentCell.RowIndex].Cells[2].Value.ToString();
             txtPrecio.Text = DgvAlmacen.Rows[DgvAlmacen.CurrentCell.RowIndex].Cells[3].Value.ToString();
-            if (txtNombre.Text == "Maiz")
-            {
-                imagen = "D:\\SQL server\\Pictures\\maiz.jpg";
-            }
-            else if (txtNombre.Text == "Galletas")
-            {
-                imagen = "D:\\SQL server\\Pictures\\galletas_con_chispas_de_chocolate_caseras_35926_orig.jpg";
-            }
-            else if (txtNombre.Text == "Pan")
-            {
-                imagen = "D:\\SQL server\\Pictures\\pan-largo-del-pan-22826883.jpg";
-            }
-            else if (txtNombre.Text == "Pastel vegano")
-            {
-                imagen = "D:\\SQL server\\Pictures\\840_560.jpg";
-            }
-            else if (txtNombre.Text == "Noni")
-            {
-                imagen = "D:\\SQL server\\Pictures\\noni.jpg";
-            }
-            else if (txtNombre.Text == "Piña")
-            {
-                imagen = "D:\\SQL server\\Pictures\\piña_g.jpg";
-            }
-            else if (txtNombre.Text == "Pai de limon")
-            {
-                imagen = "D:\\SQL server\\Pictures\\ZIJQWMN3UVGCFAM3SHBWAJIHIY.png";
-            }
-            else if (txtNombre.Text == "Aceite de maiz")
-            {
-                imagen = "D:\\SQL server\\Pictures\\aceitademaiz.jpg";
-            }
-            else if (txtNombre.Text == "Harina de maiz")
-            {
-                imagen = "D:\\SQL server\\Pictures\\índice.jpg";
-            }
-            else if (txtNombre.Text == "Palomitas de maiz")
-            {
-                imagen = "D:\\SQL server\\Pictures\\palomitas.jpg";
-            }
-            else if (txtNombre.Text == "Snacks salados")
-            {
-                imagen = "D:\\SQL server\\Pictures\\snacks.jpg";
-            }
-            else if (txtNombre.Text == "Cereal")
-            {
-                imagen = "D:\\SQL server\\Pictures\\Cereales-Zuck-ANGEL-bolsa-de-20g.jpg";
-            }
-            else if (txtNombre.Text == "Gelatina")
-            {
-                imagen = "D:\\SQL server\\Pictures\\Gelatina.jpg";
-            }
-            else { 
-                imagen = DgvAlmacen.Rows[DgvAlmacen.CurrentCell.RowIndex].Cells[4].Value.ToString();
-            }
+            imagen = DgvAlmacen.Rows[DgvAlmacen.CurrentCell.RowIndex].Cells[4].Value.ToString();
             pcProducto.Image = Image.FromFile(imagen);
         }
 
